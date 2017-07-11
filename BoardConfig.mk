@@ -71,6 +71,9 @@ TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 TARGET_KERNEL_CONFIG := z2_row_defconfig
 TARGET_KERNEL_SOURCE := kernel/zuk/msm8996
 
+# Webview defs
+PREBUILT_WEBVIEW_VERSION := chromium
+
 # Audio
 AUDIO_USE_LL_AS_PRIMARY_OUTPUT := true
 AUDIO_FEATURE_ENABLED_ACDB_LICENSE := true
