@@ -126,7 +126,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     camera.msm8996 \
     libmm-qcamera \
-    Snap
+    SnapdragonCamera
 
 # Display
 PRODUCT_PACKAGES += \
