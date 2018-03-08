@@ -132,7 +132,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     cneapiclient \
     com.quicinc.cne \
-    services-ext
+    services-ext \
+    libcnefeatureconfig
 
 # Display
 PRODUCT_PACKAGES += \
@@ -156,6 +157,14 @@ PRODUCT_COPY_FILES += \
 #For android_filesystem_config.h
 PRODUCT_PACKAGES += \
     fs_config_files
+
+# Net
+PRODUCT_PACKAGES += \
+   libandroid_net
+
+# Lights
+PRODUCT_PACKAGES += \
+    lights.msm8996
 
 # GPS
 PRODUCT_PACKAGES += \
@@ -290,9 +299,9 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full \
     librmnetctl \
-    libxml2 \
-    rild_socket
+    libxml2
 
 # Seccomp policy
 PRODUCT_COPY_FILES += \
