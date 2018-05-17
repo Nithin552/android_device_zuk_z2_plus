@@ -56,9 +56,6 @@ persist.debug.force_burn_in=true
 # Fingerprint
 persist.qfp=false
 
-# Flip panel
-ro.panel.mountflip=3
-
 # Google
 ro.opa.eligible_device=true
 
