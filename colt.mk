@@ -24,9 +24,9 @@ $(call inherit-product, device/zuk/z2_plus/device.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Inherit some common AOSP-OMS stuff.
-$(call inherit-product, vendor/aosp/common.mk)
+$(call inherit-product, vendor/colt/config/common_full_phone.mk)
 
-PRODUCT_NAME := aosp_z2_plus
+PRODUCT_NAME := colt_z2_plus
 PRODUCT_DEVICE := z2_plus
 PRODUCT_MANUFACTURER := ZUK
 PRODUCT_BRAND := ZUK
@@ -44,3 +44,11 @@ TARGET_VENDOR := zuk
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_FINGERPRINT="ZUK/z2_plus/z2_plus:7.0/NRD90M/2.5.412_170428:user/release-keys" \
     PRIVATE_BUILD_DESC="z2_plus-user 7.0 NRD90M 2.5.412_170428 release-keys"
+
+
+# Telephony packages
+PRODUCT_PACKAGES += \
+    telephony-ext
+
+ PRODUCT_BOOT_JARS += \
+telephony-ext
