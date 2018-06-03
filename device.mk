@@ -124,6 +124,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libbt-vendor
 
+# Healthd
+PRODUCT_PACKAGES += \
+    android.hardware.health@1.0-convert \
+    android.hardware.health@1.0-impl \
+    android.hardware.health@1.0-service \
+    chargeonlymode
+
 # Camera
 PRODUCT_PACKAGES += \
     camera.msm8996 \

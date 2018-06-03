@@ -652,7 +652,7 @@ service readmac /system/bin/readmac
     group root
     oneshot
 
-service energy-awareness /system/bin/energy-awareness
+service energy-awareness /vendor/bin/energy-awareness
     class main
     user root
     group system
